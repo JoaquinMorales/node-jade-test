@@ -1,0 +1,450 @@
+body {
+  padding-top: 50px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+/*
+Custom color nav bar
+http://twbscolor.smarchal.com/scss?bd=ebebeb&bh=d6d6d6&cd=424242&ch=000000
+*/
+.navbar-default {
+    background-image: -webkit-linear-gradient(top, #ebebeb 0, #dbdbdb 100%);
+    background-image: -o-linear-gradient(top,#ebebeb 0,#dbdbdb 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#ebebeb),to(#dbdbdb));
+    background-image: linear-gradient(to bottom,#ebebeb 0,#dbdbdb 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb', endColorstr='#dbdbdb', GradientType=0);
+    background-repeat: repeat-x;
+    font-size: 16px;
+    background-color: #dbdbdb;
+    border-color: #c0c0c0;
+}
+
+.navbar-default .navbar-brand {
+    color: #424242;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #000000;
+}
+.navbar-default .navbar-text {
+    color: #424242;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #424242;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #000000;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #000000;
+    background-color: #c0c0c0;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #000000;
+    background-color: #c0c0c0;
+}
+.navbar-default .navbar-toggle {
+    border-color: #c0c0c0;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #c0c0c0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #424242;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    border-color: #424242;
+}
+.navbar-default .navbar-link {
+    color: #424242;
+}
+.navbar-default .navbar-link:hover {
+    color: #000000;
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #424242;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #000000;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #000000;
+        background-color: #c0c0c0;
+    }
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*buttons in panel*/
+.panel-heading .btn{
+    float:right;
+    overflow: auto;
+    margin-top: -19px;
+    height: 20px;
+    margin-right: 3px;
+
+    background: transparent;
+    border: none; 
+    box-shadow: none;
+
+}
+
+.panel-buttons{
+    float: right;
+    margin-top: -20px;
+}
+
+.panel-heading .btn:hover, .panel-heading .btn:focus{
+    color: white;//#6e6e6e;//#999999;
+    background-color: #428bca;
+    font-weight: normal;
+    text-shadow: none;
+}
+
+div.panel-heading:nth-child(2){
+    margin-right: -3px;
+}
+
+.panel-body .btn-group{
+    float:right;
+    right: 15px;
+}
+
+
+/*grid styles*/
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: auto; 
+    height: 500px;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.form-description{
+    font-weight: normal;
+}
+
+.summary-form{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.panel-title{
+    font-weight: bold;
+}
+
+svg text {
+    font-size: 12px!important;
+}
+
+.ngViewport.ng-scope{
+    overflow-x: hidden;
+}
+
+.multiLine {
+     white-space: normal!important;
+     text-overflow: clip!important;
+}
+
+.loading-spinner{
+/*    margin: 234px 643px; */
+/*    margin-left: 20%;*/
+    position: absolute; 
+    top: 8px;
+    right: 18px;
+    width: 16px;
+    height: 16px;
+    z-index: 100;
+}
+
+.loading-spiner-page{
+    display:none;
+    position:fixed;
+    left:50%;        
+    top:50%;         
+    width:32px;     
+    height:32px;
+    //background:#FFFFFF;
+    z-index:100000;
+}
+
+.opacity-page{
+    display:none;    
+    position:fixed;  
+    left:0px;        
+    top:0px;         
+    width:100%;      
+    height:100%;     
+    background:#fff; 
+    opacity:0.55;     
+    z-index:99999;
+}
+
+.opacity-box{
+    display: block;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width:100%;      
+    height:100%;     
+    background:#fff; 
+    opacity:0.55;  
+}
+
+.table-overlay{
+    position: absolute; 
+    left: 40%;
+    top: 290px;
+    z-index: 100;  
+}
+
+.bootstrap-switch-mini {
+    height: 23px;
+}
+
+.bootstrap-switch-small {
+    height: 30px;
+}
+
+.bootstrap-switch-normal{
+    height: 34px;
+}
+
+
+/*validations in form*/
+
+input.ng-invalid.ng-dirty {
+    background-color: #FA787E;  
+  }
+
+input.ng-valid.ng-dirty {
+    background-color: white;
+  }
+  
+  
+  
+  .form-group.required .control-label:after { 
+   content:"*";
+   color:red;
+}
+
+.form-group.required .not-required.control-label:after{
+    content:"";
+}
+
+.rules-group-body .rules-group-container button[data-add=group]{
+    display: none;
+    background-color: blueviolet;
+}
+
+
+/*header------------------------------------------------------------------------*/
+/*.cirries-header{
+    background-color: #E1E1E1;
+    text-shadow: none;
+    font-weight: bold;
+}*/
+
+p.header-title {
+    font-size: 18px;
+}
+
+g.nv-series {
+    margin-left: 15px;
+}
+
+#descriptionTable .ngCell  {
+  display : table-cell;
+  height: auto !important;
+  overflow:visible;
+  position: static;
+  vertical-align: top !important;
+  
+}
+
+#descriptionTable .ngCell.col0{
+    padding-right: 5px;
+    border-right: 1px solid #D4D4D4;
+}
+
+#descriptionTable .ngCell.col1{
+    border-right: 1px solid #D4D4D4;
+}
+
+#descriptionTable .ngRow {
+  display : table-row;
+  height: auto !important;
+  position: static;
+}
+
+#descriptionTable .ngCellText{
+  height: auto !important;
+  white-space: normal;
+  overflow:visible;
+}
+
+#descriptionTable .ngSelectionCell.ng-scope{
+    vertical-align: top;
+}
+
+#descriptionTable .ngCanvas{
+    height: auto !important;
+}
+
+#descriptionTable .ngRow.even.selected{
+    background-color: #f3f3f3;
+}
+
+#descriptionTable .ngRow.odd.selected{
+     background-color: #fdfdfd;
+}
+
+#descriptionTable .ngCellText.col1{
+     font-weight: bold;
+}
+
+/*.ngCell  {
+  display : table-cell;
+  height: auto !important;
+  overflow:visible;
+  position: static;
+  vertical-align: top !important;
+}
+
+.ngRow {
+  display : table-row;
+  height: auto !important;
+  position: static;
+}
+
+.ngCellText{
+  height: auto !important;
+  white-space: normal;
+  overflow:visible;
+}
+
+.ngSelectionCell.ng-scope{
+    vertical-align: top;
+}
+
+.ngCanvas{
+    height: auto !important;
+}*/
+
+.form-control.special-readonly[readonly]{
+    background-color:white;
+    cursor: pointer;
+}
+
+.form-control.special-readonly[disabled]{
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+#gridEvents .ngTopPanel.ng-scope{
+    height: 80px!important;
+}
+
+//fix firefox
+
+/*.ngHeaderContainer {
+    overflow: scroll;
+}*/
